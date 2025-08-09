@@ -1,0 +1,85 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Do NOT use body::before — we removed it */
+
+/* Content layering */
+header, .test-list, .menu {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background: rgba(49, 192, 197, 0.3); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #003366;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.test-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(28, 198, 232, 0.3); 
+    
+}
+
+.test-list h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.test-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.test-list li {
+    background: #09b9b9;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.test-list li:hover {
+    transform: scale(1.02);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.menu-option a {
+    text-decoration: none;
+    background: #003366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.menu-option a:hover {
+    background: #0055cc;
+    transform: translateY(-2px);
+}
+

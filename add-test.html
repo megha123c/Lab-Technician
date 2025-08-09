@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Test - Apollo Hospital</title>
+    <link rel="stylesheet" href="css/add-test.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Lab Test</h1>
+    </header>
+
+    <main class="form-container">
+        <form action="test-success.html" method="GET">
+            <label>🧪 Test Name</label>
+            <input type="text" name="testName" required><br>
+
+            <label>📉 Low Range</label>
+            <input type="number" name="lowRange" required><br>
+
+            <label>📈 High Range</label>
+            <input type="number" name="highRange" required><br>
+
+            <label>📏 Unit</label>
+            <input type="text" name="unit" required><br>
+
+            <label>💰 Price</label>
+            <input type="number" name="price" required><br>
+
+            <button type="submit">Add Test</button>
+        </form>
+        <br>
+        <a href="lab-dash.html">Back to Test Management Menu</a>
+    </main>
+</body>
+</html>
+

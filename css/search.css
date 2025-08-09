@@ -1,0 +1,108 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: rgba(0, 51, 102, 0.85);
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+/* Main Container */
+main {
+    margin-top: 40px;
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 40px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Subheading */
+main h2 {
+    font-size: 1.6rem;
+    color: #003366;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+main h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Options Container */
+.search-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Individual Option Box */
+.option {
+    flex: 1 1 220px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.option:hover {
+    transform: translateY(-8px) scale(1.03);
+    background-color: rgba(204, 224, 255, 0.85);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Links Inside Options */
+.option a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: 600;
+    font-size: 1.15rem;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.option a:hover {
+    color: #0056b3;
+}

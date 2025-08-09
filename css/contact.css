@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease;
+}
+
+/* Heading */
+.contact-section h2 {
+    color: #6c63ff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Info text */
+.contact-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Input and Textarea */
+.contact-section input,
+.contact-section textarea {
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    background-color: #f9fbfd;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.2);
+}
+
+/* Submit Button */
+.contact-section button {
+    background-color: #6c63ff;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-section button:hover {
+    background-color: #574b90;
+    transform: translateY(-2px);
+}
+
+.contact-section button:active {
+    transform: scale(0.98);
+}
+
+/* Optional: Icons inside placeholders */
+::placeholder {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional: success/error message */
+.message {
+    font-size: 0.95rem;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .contact-section {
+        padding: 30px 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-section p {
+        font-size: 0.95rem;
+    }
+}
